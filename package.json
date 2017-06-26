@@ -1,0 +1,22 @@
+{
+	"name": "moral-o-mat",
+	"description": "Gives you a controversial moral statement to think about.",
+	"version": "0.1.0",
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"game",
+		"moral",
+		"ethics"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/moral-o-mat",
+	"repository": "derhuerst/moral-o-mat",
+	"bugs": "https://github.com/derhuerst/moral-o-mat/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=6"
+	}
+}
