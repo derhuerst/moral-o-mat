@@ -18,7 +18,13 @@ npm install moral-o-mat
 ## Usage
 
 ```js
-todo
+const moralOMat = require('moral-o-mat')
+
+console.log(moralOMat())
+```
+
+```
+Die Menschheit ist nüchtern betrachtet nicht notwending.
 ```
 
 
