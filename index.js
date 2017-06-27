@@ -1,20 +1,29 @@
 'use strict'
 
 const topics = [
-	'Armut',
-	'Die Gesellschaft',
-	'Politiker*innen',
-	'Die Menschheit',
-	'Geld',
-	'Der Pöbel',
-	'Die Mittelschicht',
-	'Die Politik',
-	'Die Umwelt',
-	'Die Bundeswehr',
-	'Macht',
-	'Wissen',
-	'Vernunft',
-	'Freiheit'
+	'Armut ist',
+	'Reichturm ist',
+	'Die Gesellschaft ist',
+	'Politiker*innen sind',
+	'Die Menschheit ist',
+	'Geld ist',
+	'Der Pöbel ist',
+	'Die Politik ist',
+	'Die Umwelt ist',
+	'Krieg ist',
+	'Macht ist',
+	'Wissen ist',
+	'Vernunft ist',
+	'Freiheit ist',
+	'Stolz ist',
+	'Haltung ist',
+	'Streben ist',
+	'Massenmord ist',
+	'Genozid ist',
+	'Das Abstellen von Fahrrädern ist',
+	'Börsenhandel ist',
+	'Erwerbsarbeit ist',
+	'Der Sozialstaat ist'
 ]
 
 const adverbs = [
@@ -29,7 +38,9 @@ const adverbs = [
 	'gewissermaßen',
 	'vielleicht',
 	'im Prinzip',
-	'ehrlich gesagt'
+	'ehrlich gesagt',
+	'irgendwie',
+	'global betrachtet'
 ]
 
 const depictions = [
@@ -43,9 +54,13 @@ const depictions = [
 	'genehmigt',
 	'zu unterlassen',
 	'strengstens verboten',
-	'notwending',
+	'notwendig',
 	'nur in Ausnahmefällen okay',
-	'zu begrüßen'
+	'zu begrüßen',
+	'ausreichend',
+	'das Wichtigste',
+	'der Sinn des Lebens',
+	'ein Trugschluss'
 ]
 
 const moralOMat = () => {
@@ -53,7 +68,7 @@ const moralOMat = () => {
 	const adverb = adverbs[Math.round(Math.random() * (adverbs.length - 1))]
 	const depiction = depictions[Math.round(Math.random() * (depictions.length - 1))]
 
-	return topic + ' ist ' + adverb + ' ' + depiction + '.'
+	return topic + ' ' + adverb + ' ' + depiction + '.'
 }
 
 module.exports = moralOMat
