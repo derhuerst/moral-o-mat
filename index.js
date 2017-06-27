@@ -1,29 +1,29 @@
 'use strict'
 
 const topics = [
-	'Armut ist',
-	'Reichturm ist',
-	'Die Gesellschaft ist',
-	'Politiker*innen sind',
-	'Die Menschheit ist',
-	'Geld ist',
-	'Der Pöbel ist',
-	'Die Politik ist',
-	'Die Umwelt ist',
-	'Krieg ist',
-	'Macht ist',
-	'Wissen ist',
-	'Vernunft ist',
-	'Freiheit ist',
-	'Stolz ist',
-	'Haltung ist',
-	'Streben ist',
-	'Massenmord ist',
-	'Genozid ist',
-	'Das Abstellen von Fahrrädern ist',
-	'Börsenhandel ist',
-	'Erwerbsarbeit ist',
-	'Der Sozialstaat ist'
+	'Armut',
+	'Reichtum',
+	'Die Gesellschaft',
+	'Geld',
+	'Der Pöbel',
+	'Die Politik',
+	'Die Umwelt',
+	'Krieg',
+	'Macht',
+	'Wissen',
+	'Vernunft',
+	'Freiheit',
+	'Stolz',
+	'Haltung',
+	'Streben',
+	'Massenmord',
+	'Das Abstellen von Fahrrädern',
+	'Börsenhandel',
+	'Erwerbsarbeit',
+	'Der Sozialstaat',
+	'Naivität',
+	'Neid',
+	'Ehrlichkeit'
 ]
 
 const adverbs = [
@@ -40,7 +40,8 @@ const adverbs = [
 	'im Prinzip',
 	'ehrlich gesagt',
 	'irgendwie',
-	'global betrachtet'
+	'global betrachtet',
+	'vorzugsweise'
 ]
 
 const depictions = [
@@ -54,13 +55,15 @@ const depictions = [
 	'genehmigt',
 	'zu unterlassen',
 	'strengstens verboten',
-	'notwendig',
+	'echt notwendig',
+	'nicht notwendig',
 	'nur in Ausnahmefällen okay',
 	'zu begrüßen',
 	'ausreichend',
 	'das Wichtigste',
 	'der Sinn des Lebens',
-	'ein Trugschluss'
+	'ein Trugschluss',
+	'echt daneben'
 ]
 
 const moralOMat = () => {
@@ -68,7 +71,7 @@ const moralOMat = () => {
 	const adverb = adverbs[Math.round(Math.random() * (adverbs.length - 1))]
 	const depiction = depictions[Math.round(Math.random() * (depictions.length - 1))]
 
-	return topic + ' ' + adverb + ' ' + depiction + '.'
+	return topic + ' ist ' + adverb + ' ' + depiction + '.'
 }
 
 module.exports = moralOMat
