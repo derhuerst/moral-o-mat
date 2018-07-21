@@ -24,7 +24,8 @@ const topics = [
 	'Der Sozialstaat',
 	'Naivität',
 	'Neid',
-	'Ehrlichkeit'
+	'Ehrlichkeit',
+	'Scheinselbstständigkeit'
 ]
 
 const adverbs = [
